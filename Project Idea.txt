@@ -1,0 +1,12 @@
+My project idea
+
+Game to guess the similar images in a grid
+
+I propose to implment a game that consistes of:
+ a grid of 4 lines and 4 columns where images are shown and hide two by two when clicked by the user.
+If the two images are similar they continue to be shown else they will be hidden.
+He reclick a prefixed number of clickes.
+If the counter of clickes is empty he looses and if he has checked all the images he wines.
+
+We need to know how to add a grid in a html and how to get the position when clicked and to compare if they have similar content.
+bootstrap library CDN

@@ -1,0 +1,89 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style>
+		body {
+			width:  90%;
+			max-width: 900px;
+			margin:  2em auto;
+			font:  .9em/1.2 Arial, Helvetica, sans-serif;
+		}
+		.grid-container {
+  		display: grid;
+  		--gap: 20px;
+  		--num-cols: 4;
+  		--row-height: 100px;
+  		box-sizing: border-box;
+  		padding: var(--gap);
+  		grid-template-columns: repeat(var(--num-cols), 1fr);
+  		grid-auto-rows: var(--row-height);
+  		border-radius: 5px;
+  		background-color: rgb(207,232,220);
+  		border:  2px solid rgb(79,185,227);
+		}
+		.image-item{
+			width: 100%;
+			height: 100%;
+			
+		}
+	</style>
+	<title>Guess Images Game</title>
+</head>
+<body>
+<div class="grid-container">
+  <div id="1" class="grid-item">
+  	<img id="image1" class="image-item" src="cat1.jpg" alt="image1">
+  </div>
+  <div id="2" class="grid-item">
+  	<img id="image2" class="image-item" src="cat2.jpg" alt="image2">
+  </div>
+  <div id="3" class="grid-item">
+  	<img id="image3" class="image-item" src="cat3.jpg" alt="image3">
+  </div>
+  <div id="4" class="grid-item">
+  	<img id="image4" class="image-item" src="cat4.jpg" alt="image4">
+  </div>
+  <div id="5" class="grid-item">
+  	<img id="image5" class="image-item" src="cat5.jpg" alt="image5">
+  </div>
+  <div id="6" class="grid-item">
+  	<img id="image6" class="image-item" src="cat6.jpg" alt="image6">
+  </div>
+  <div id="7" class="grid-item">
+  	<img id="image7" class="image-item" src="cat7.jpg" alt="image7">
+  </div>
+  <div id="8" class="grid-item">
+  	<img id="image8" class="image-item" src="cat8.jpg" alt="image8">
+  </div>
+  <div id="9" class="grid-item">
+  	<img id="image9" class="image-item" src="cat1.jpg" alt="image9">
+  </div>
+  <div id="10" class="grid-item">
+  	<img id="image10" class="image-item" src="cat2.jpg" alt="image10">
+  </div>
+  <div id="11" class="grid-item">
+  	<img id="image11" class="image-item" src="cat3.jpg" alt="image11">
+  </div>
+  <div id="12" class="grid-item">
+  	<img id="image12" class="image-item" src="cat4.jpg" alt="image12">
+  </div>
+  <div id="13" class="grid-item">
+  	<img id="image13" class="image-item" src="cat5.jpg" alt="image13">
+  </div>
+  <div id="14" class="grid-item">
+  	<img id="image14" class="image-item" src="cat6.jpg" alt="image14">
+  </div>
+  <div id="15" class="grid-item">
+  	<img id="image15" class="image-item" src="cat7.jpg" alt="image15">
+  </div>
+  <div id="16" class="grid-item">
+  	<img id="image16" class="image-item" src="cat8.jpg" alt="image16">
+  </div>
+</div>
+<script type="text/javascript" src="main.js">
+</script>
+</body>
+ 
