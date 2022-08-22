@@ -1,33 +1,30 @@
 
 
 var nbClickes=0; //initialize number of clickes to 0	
-var glClickes=16;//The maximum of clickes allowed
-window.onload=init;
-function init(){
-
+var glClickes=0;//The maximum of clickes allowed
+//window.onload=init;
+//function init(){
+img1={};
+img2={};
 
 var imgs=document.getElementsByClassName("image-item");
 var divs=document.getElementsByClassName("grid-item");
 for(var i=0; i<imgs.length;i++){
 	imgs[i].style.visibility= 'hidden'; //Set all the images hidden
-	divs[i].addEventListener('click', imgClicked,true);//Adding an event listener to the divs that contains the images to call the clicked img function
-	//imgs[i].addEventListener('click', showImg);
+	
+	divs[i].addEventListener('click', imgClicked);//Adding an event listener to the divs that contains the images to call the clicked img function
+	
 		}
-}		
-		function showImg(eventObj)
-		{
-			alert(nbClickes);
-			eventObj.target.style.visibility='visible';
-		}
+//}		
+		
 
 		
 		 function imgClicked(eventObject)
 		{	
-			console.log(eventObject.target.id);
+			
 			nbClickes++;// We need the result of two simultanous clickes then we have to wait until having nbClickes equal to two
 						
-			alert("nombre de clickes: "+nbClickes+" it remains: "+ (glClickes-=1));
-			
+						
 			if (nbClickes ===1)
 			{
 				img1=document.getElementById("image"+eventObject.target.id);// The first clicked img
@@ -41,15 +38,17 @@ for(var i=0; i<imgs.length;i++){
 				if (img1.src===img2.src)
 				{
 				
-				alert("They are the same!");
 				img1={};
 				img2={};
 				}
 				//if the two imgs are not the same
 				else
 				{
+					setTimeout(function(){
 					img1.style.visibility= 'hidden';
 					img2.style.visibility= 'hidden';
+									},2000);
+	
 				}
 
 			};
